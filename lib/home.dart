@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getamb/cadastro.dart';
+import 'package:getamb/main-motorista.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -95,8 +96,9 @@ class _HomeState extends State<Home> {
                     // If the form is valid, display a snackbar. In the real world,
                     // you'd often call a server or save the information in a database.
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Processing Data')),
+                      const SnackBar(content: Text('Processando...')),
                     );
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> MainMotor()));
                   }
                 },
                 child: const Text('Logar'),

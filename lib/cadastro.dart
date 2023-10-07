@@ -38,7 +38,7 @@ class _CadastroState extends State<Cadastro> {
                   ]),
             ),
            const SizedBox(
-              height: 20,
+              height: 30,
             ),
             const Text(
               "Registre-se como motorista",
